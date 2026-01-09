@@ -37,10 +37,10 @@ const foodItems: FoodItem[] = [
 export default function MostOrderedFoodCard() {
   return (
     <div className="bg-white md:mt-0 mt-30 p-6  md:border-r border-gray-200 h-full overflow-hidden">
-      <h3 className="text-sm font-medium text-gray-900 mb-2">
+      <h3 className="text-md font-medium text-gray-900 mb-2">
         Most Ordered Food
       </h3>
-      <p className="text-xs text-gray-500 mb-6">
+      <p className="text-sm text-gray-500 mb-6">
         Adipiscing elit, sed do eiusmod tempor
       </p>
 

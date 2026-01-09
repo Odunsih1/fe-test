@@ -34,7 +34,7 @@ export default function RevenueCard() {
   return (
     <div className="bg-white p-6 border-b md:border-r border-gray-200 h-full">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-sm font-medium text-gray-600">Revenue</h3>
+        <h3 className="text-md font-medium text-gray-600">Revenue</h3>
         <button className="text-sm shadow p-2 rounded-lg bg-[#FBFCFE] border border-[#DDE4F0] cursor-pointer text-[#5A6ACF] hover:text-blue-700 font-medium transition-colors">
           View Report
         </button>

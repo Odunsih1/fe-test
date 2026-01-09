@@ -18,8 +18,8 @@ export default function OrderTimeCard() {
     <div className="bg-white p-6 border-b border-gray-200 h-full">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h3 className="text-sm font-medium text-gray-600">Order Time</h3>
-          <p className="text-xs text-gray-500 mt-1">From 1-6 Dec, 2020</p>
+          <h3 className="text-md font-medium text-gray-600">Order Time</h3>
+          <p className="text-sm text-gray-500 mt-1">From 1-6 Dec, 2020</p>
         </div>
         <button className="text-sm shadow p-2 rounded-lg bg-[#FBFCFE] border border-[#DDE4F0] cursor-pointer text-[#5A6ACF] hover:text-blue-700 font-medium transition-colors">
           View Report
