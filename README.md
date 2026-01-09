@@ -45,7 +45,7 @@ Make sure you have Node.js installed on your computer. You can download it from 
 
 ### What We Use & Why
 
-| Technology       | Purpose                                       | Why We Chose It                                        |
+| Technology       | Purpose                                       | Why It                                        |
 | ---------------- | --------------------------------------------- | ------------------------------------------------------ |
 | **React**        | Builds the interactive parts of the dashboard | Makes the interface smooth and responsive              |
 | **Next.js**      | Framework that organizes everything together  | Provides fast loading and easy routing between pages   |
