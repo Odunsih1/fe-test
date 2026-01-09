@@ -1,6 +1,6 @@
 "use client";
 import DashboardLayout from "@/components/layout/Dashboard-layout";
-import { TrendingUp, TrendingDown } from "lucide-react";
+import { TrendingUp, TrendingDown, ArrowDown } from "lucide-react";
 import {
   LineChart,
   Line,
@@ -259,7 +259,7 @@ export default function DashboardPage({
             </p>
 
             {/* Custom Pie Chart with SVG */}
-            <div className="flex items-center justify-center my-6 relative">
+            <div className="flex items-center text-white justify-center my-6 relative">
               <div className="bg-transparent rounded-full p-1 border-[#6463D6] border-r-2 border-b-2 relative left-35 z-10 ">
                 <div className="bg-[#6463D6] rounded-full w-38 h-38 flex items-center opacity-90  flex-col justify-center ">
                   <h6 className="text-[20px]">85%</h6>
@@ -292,8 +292,8 @@ export default function DashboardPage({
 
             <div>
               {foodItems.map((item: FoodItem) => (
-                <div key={item.id} className="flex items-center border-b gap-3">
-                  <div className="w-28 h-28 rounded-full  flex-shrink-0 overflow-hidden">
+                <div key={item.id} className="flex items-center border-b border-gray-200 gap-3">
+                  <div className="w-28 h-28 rounded-full  shrink-0 overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.name}
@@ -325,7 +325,7 @@ export default function DashboardPage({
             <div className="mb-2">
               <p className="text-3xl font-bold text-gray-900">2.568</p>
               <div className="flex items-center gap-1 mt-1">
-                <TrendingDown className="h-4 w-4 text-red-600" />
+                <ArrowDown className="h-4 w-4 text-red-600" />
                 <span className="text-sm text-red-600 font-medium">2.1%</span>
                 <span className="text-sm text-gray-500">vs last week</span>
               </div>

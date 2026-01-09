@@ -67,7 +67,7 @@ export default function Sidebar({
         isCollapsed ? "w-20" : "w-64"
       } bg-[#F1F2F7] h-screen transition-all duration-300 ease-in-out flex flex-col ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0 fixed md:static z-30`}
+      } md:translate-x-0 fixed md:sticky top-0 z-30 overflow-hidden`}
     >
       {/* Logo Section */}
       <div className="p-6 border-b border-gray-200">
@@ -82,7 +82,7 @@ export default function Sidebar({
       </div>
 
       {/* Navigation Menu */}
-      <nav className="flex-1 py-6 overflow-y-auto">
+      <nav className="flex-1 py-6 overflow-y-auto scrollbar-hide">
         {menuSections.map((section: MenuSection, sectionIndex: number) => (
           <div key={section.header} className={sectionIndex > 0 ? "mt-8" : ""}>
             {!isCollapsed && (
