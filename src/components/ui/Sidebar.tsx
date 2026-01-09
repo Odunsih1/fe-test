@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-import Dashboard from "/icons/dashboard.svg";
-import Food from "/icons/food.svg";
-import Manage from "/icons/manage.svg";
-import Customer from "/icons/customer.svg";
-import Settings from "/icons/settings.svg";
-import Payment from "/icons/payment.svg";
-import Accounts from "/icons/accounts.svg";
-import Help from "/icons/help.svg";
+import Image from "next/image";
+import Dashboard from "@/icons/dashboard.svg";
+import Food from "@/icons/food.svg";
+import Manage from "@/icons/manage.svg";
+import Customer from "@/icons/customer.svg";
+import Settings from "@/icons/setting.svg";
+import Payment from "@/icons/payment.svg";
+import Accounts from "@/icons/account.svg";
+import Help from "@/icons/help.svg";
 
 interface MenuItem {
   title: string;
@@ -64,18 +65,18 @@ export default function Sidebar({
     <aside
       className={`${
         isCollapsed ? "w-20" : "w-64"
-      } bg-white border-r border-gray-200 transition-all duration-300 ease-in-out flex flex-col ${
+      } bg-[#F1F2F7] h-screen transition-all duration-300 ease-in-out flex flex-col ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0 fixed md:static h-full z-30`}
+      } md:translate-x-0 fixed md:static z-30`}
     >
       {/* Logo Section */}
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl">
-            B
+          <div className="h-10 w-10 rounded-full bg-[#5A67BA] flex items-center justify-center text-white font-bold text-xl">
+            G
           </div>
           {!isCollapsed && (
-            <span className="font-bold text-xl text-gray-900">Bursted</span>
+            <span className="font-bold text-md text-[#5A67BA]">GOODFOOD</span>
           )}
         </div>
       </div>
@@ -102,17 +103,19 @@ export default function Sidebar({
                         e.preventDefault();
                         handleItemClick(item.title);
                       }}
-                      className={`flex items-center gap-3 px-3 py-3 rounded-lg transition-all duration-200 ${
+                      className={`flex items-center gap-3 px-3 py-3 text-[12px]/[12px] rounded-lg transition-all duration-200 ${
                         isActive
-                          ? "bg-blue-50 text-blue-600 font-medium"
-                          : "text-gray-700 hover:bg-gray-50"
+                          ? "bg-[#707fdd17] text-[#5A6ACF] font-medium"
+                          : "text-gray-500 hover:bg-[#707fdd17]"
                       } ${isCollapsed ? "justify-center" : ""}`}
                       title={isCollapsed ? item.title : ""}
                     >
-                      <img
+                      <Image
                         src={item.icon}
                         alt={`${item.title} icon`}
-                        className={`h-5 w-5 flex-shrink-0 ${
+                        width={20}
+                        height={20}
+                        className={`flex-shrink-0 ${
                           isActive ? "opacity-100" : "opacity-60"
                         }`}
                       />
