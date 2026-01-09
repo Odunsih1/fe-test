@@ -2,6 +2,12 @@
 
 A beautiful and responsive food ordering dashboard that helps restaurant managers track orders, revenue, and customer feedback all in one place.
 
+##  Screenshot
+
+![GOODFOOD Dashboard](./public/images/image.png)
+
+_The main dashboard showing revenue charts, order tracking, and customer ratings_
+
 ##  How to Run
 
 ### Prerequisites
@@ -33,7 +39,7 @@ Make sure you have Node.js installed on your computer. You can download it from 
    ```
    This creates an optimized version ready to deploy.
 
-##  Features
+## Features
 
 - **Dashboard Overview** - See your revenue and orders at a glance
 - **Order Tracking** - Monitor orders throughout the day
@@ -41,11 +47,11 @@ Make sure you have Node.js installed on your computer. You can download it from 
 - **Food Menu Management** - View your most ordered items
 - **Responsive Design** - Works great on phones, tablets, and computers
 
-##  Technology Stack
+## Technology Stack
 
 ### What We Use & Why
 
-| Technology       | Purpose                                       | Why It                                        |
+| Technology       | Purpose                                       | Why It                                                 |
 | ---------------- | --------------------------------------------- | ------------------------------------------------------ |
 | **React**        | Builds the interactive parts of the dashboard | Makes the interface smooth and responsive              |
 | **Next.js**      | Framework that organizes everything together  | Provides fast loading and easy routing between pages   |
@@ -55,13 +61,13 @@ Make sure you have Node.js installed on your computer. You can download it from 
 | **Lucide Icons** | Provides icons for the menu                   | Gives the interface a clean, professional look         |
 | **Poppins Font** | Text styling                                  | Creates a modern and readable appearance               |
 
-##  Notes
+## Notes
 
 - The dashboard is fully responsive and works on all screen sizes
 - The sidebar stays fixed while scrolling through content for easy navigation
 - All data shown is sample data for demonstration purposes
 
-##  Support
+## Support
 
 If you run into any issues, check that:
 
