@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GOODFOOD - Dashboard
 
-## Getting Started
+A beautiful and responsive food ordering dashboard that helps restaurant managers track orders, revenue, and customer feedback all in one place.
 
-First, run the development server:
+##  How to Run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have Node.js installed on your computer. You can download it from [nodejs.org](https://nodejs.org/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Install Dependencies**
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   This downloads and sets up all the tools needed to run the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Start the Development Server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+   Open your browser and go to `http://localhost:3000` to see the dashboard.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Build for Production**
+   ```bash
+   npm run build
+   npm start
+   ```
+   This creates an optimized version ready to deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##  Features
+
+- **Dashboard Overview** - See your revenue and orders at a glance
+- **Order Tracking** - Monitor orders throughout the day
+- **Customer Ratings** - Track food quality, hygiene, and packaging ratings
+- **Food Menu Management** - View your most ordered items
+- **Responsive Design** - Works great on phones, tablets, and computers
+
+##  Technology Stack
+
+### What We Use & Why
+
+| Technology       | Purpose                                       | Why We Chose It                                        |
+| ---------------- | --------------------------------------------- | ------------------------------------------------------ |
+| **React**        | Builds the interactive parts of the dashboard | Makes the interface smooth and responsive              |
+| **Next.js**      | Framework that organizes everything together  | Provides fast loading and easy routing between pages   |
+| **TypeScript**   | Adds safety checks to our code                | Helps catch bugs before they happen                    |
+| **Tailwind CSS** | Styles the entire dashboard                   | Makes it easy to create beautiful designs quickly      |
+| **Recharts**     | Creates charts and graphs                     | Displays revenue and order data in easy-to-read charts |
+| **Lucide Icons** | Provides icons for the menu                   | Gives the interface a clean, professional look         |
+| **Poppins Font** | Text styling                                  | Creates a modern and readable appearance               |
+
+##  Notes
+
+- The dashboard is fully responsive and works on all screen sizes
+- The sidebar stays fixed while scrolling through content for easy navigation
+- All data shown is sample data for demonstration purposes
+
+##  Support
+
+If you run into any issues, check that:
+
+- Node.js is properly installed
+- You've run `npm install` to get all dependencies
+- Port 3000 is available on your computer
