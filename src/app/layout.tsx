@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fitledge",
+  title: "Fortledge",
   description: "This is a dashboard application built with Next.js and Tailwind CSS.",
 };
 

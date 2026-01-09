@@ -53,7 +53,7 @@ export default function RevenueCard() {
 
       {/* Bar Chart */}
       <ResponsiveContainer width="100%" height={200}>
-        <BarChart data={revenueData}>
+        <BarChart data={revenueData} barGap={2} barCategoryGap="25%">
           <CartesianGrid
             strokeDasharray="3 3"
             stroke="#E2E7E7"
@@ -76,8 +76,18 @@ export default function RevenueCard() {
               color: "#fff",
             }}
           />
-          <Bar dataKey="lastWeek" fill="#5A6ACF" radius={[0, 0, 0, 0]} />
-          <Bar dataKey="last6Days" fill="#E6E8EC" radius={[0, 0, 0, 0]} />
+          <Bar
+            dataKey="lastWeek"
+            fill="#5A6ACF"
+            radius={[0, 0, 0, 0]}
+            maxBarSize={8}
+          />
+          <Bar
+            dataKey="last6Days"
+            fill="#E6E8EC"
+            radius={[0, 0, 0, 0]}
+            maxBarSize={8}
+          />
         </BarChart>
       </ResponsiveContainer>
 

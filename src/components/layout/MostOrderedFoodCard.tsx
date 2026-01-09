@@ -36,7 +36,7 @@ const foodItems: FoodItem[] = [
 
 export default function MostOrderedFoodCard() {
   return (
-    <div className="bg-white md:mt-0 mt-30 p-6 border-b md:border-r border-gray-200 h-full overflow-hidden">
+    <div className="bg-white md:mt-0 mt-30 p-6  md:border-r border-gray-200 h-full overflow-hidden">
       <h3 className="text-sm font-medium text-gray-900 mb-2">
         Most Ordered Food
       </h3>
@@ -50,12 +50,12 @@ export default function MostOrderedFoodCard() {
             key={item.id}
             className="flex items-center gap-3 pb-4 border-b border-gray-100 last:border-b-0 last:pb-0"
           >
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex-shrink-0 overflow-hidden bg-gray-100">
+            <div className="w-24 h-24 sm:w-16 sm:h-16  shrink-0 overflow-hidden  ">
               <Image
                 src={item.image}
                 alt={item.name}
-                width={64}
-                height={64}
+                width={100}
+                height={100}
                 className="w-full h-full object-cover"
               />
             </div>
