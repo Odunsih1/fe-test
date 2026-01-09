@@ -44,6 +44,7 @@ interface OrderTimeData {
   name: string;
   value: number;
   color: string;
+  [key: string]: string | number;
 }
 
 const foodItems: FoodItem[] = [
@@ -105,7 +106,7 @@ const orderData: OrderData[] = [
 
 export default function DashboardPage({
   className = "",
-}: DashboardPageProps): JSX.Element {
+}: DashboardPageProps) {
   return (
     <DashboardLayout>
       <div className={`space-y-0 ${className}`}>

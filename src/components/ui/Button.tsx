@@ -13,7 +13,7 @@ export default function Button({
   children,
   className = "",
   ...props
-}: ButtonProps): JSX.Element {
+}: ButtonProps) {
   const baseStyles =
     "rounded-lg transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-offset-2";
 

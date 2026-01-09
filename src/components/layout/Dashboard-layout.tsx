@@ -9,7 +9,7 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({
   children,
-}: DashboardLayoutProps): JSX.Element {
+}: DashboardLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 

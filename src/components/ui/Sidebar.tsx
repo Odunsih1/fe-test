@@ -51,7 +51,7 @@ export default function Sidebar({
   isOpen,
   isCollapsed,
   onItemClick,
-}: SidebarProps): JSX.Element {
+}: SidebarProps) {
   const [activeItem, setActiveItem] = useState<string>("Dashboard");
 
   const handleItemClick = (itemTitle: string): void => {

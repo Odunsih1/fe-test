@@ -20,7 +20,7 @@ export default function Header({
   title = "Dashboard",
   userName = "Delicious Burger",
   userInitials = "JD",
-}: HeaderProps): JSX.Element {
+}: HeaderProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
